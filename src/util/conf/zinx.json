@@ -1,0 +1,6 @@
+{
+  "Host": "127.0.0.1",
+  "Post": 8080,
+  "Name": "demo server",
+  "MaxConn": 3
+}
