@@ -15,7 +15,7 @@ type GlobalObj struct {
 	Port           int
 	Name           string
 	MaxConn        int
-	MaxPackageSize int
+	MaxPackageSize uint32
 }
 
 var G *GlobalObj
@@ -27,7 +27,6 @@ func (G *GlobalObj) Reload() {
 		panic(err)
 	}
 	err = json.Unmarshal(data, &G)
-	fmt.Println("[ERROR]：全局变量初始化失败")
 }
 
 func init() {
