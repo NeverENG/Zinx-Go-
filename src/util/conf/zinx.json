@@ -3,5 +3,7 @@
   "Post": 8080,
   "Name": "demo server",
   "MaxConn": 3,
-  "MaxPackageSize": 1024
+  "MaxPackageSize": 1024,
+  "WorkPoolSize": 3,
+  "MaxWorkPoolTaskLen": 3
 }
