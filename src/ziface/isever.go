@@ -4,5 +4,5 @@ type IServer interface {
 	Start()
 	Stop()
 	Serve()
-	AddRouter(router IRouter)
+	AddRouter(msg uint32, router IRouter)
 }

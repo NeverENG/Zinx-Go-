@@ -11,4 +11,4 @@ type IConnect interface {
 	SendMsg(msgId uint32, data []byte) error
 }
 
-type HandleFunc func(*net.TCPConn, []byte, int) error
+// type HandleFunc func(*net.TCPConn, []byte, int) error
