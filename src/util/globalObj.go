@@ -20,6 +20,7 @@ type GlobalObj struct {
 
 	WorkerPoolSize   uint32
 	MaxWorkerTaskLen uint32
+	MaxMsgChanLen    uint32
 }
 
 var G *GlobalObj
@@ -43,6 +44,7 @@ func init() {
 		MaxPackageSize:   1024,
 		WorkerPoolSize:   3,
 		MaxWorkerTaskLen: 3,
+		MaxMsgChanLen:    3,
 	}
 	G.Reload()
 }
